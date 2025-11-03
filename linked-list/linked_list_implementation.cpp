@@ -27,7 +27,17 @@ void insert_end(int value) {
 	}
 	len++;
 }
-int getlenght()const { return len; }
+int getlength()const { return len; }
+~Linked_list() {
+	Node* curr = head;
+	while (curr) {
+		Node* next = curr->next;
+		delete curr;
+		curr = next;
+	}
+	head = tail = nullptr;
+	cout << "Free Memory\n";
+}
 };
 int main()
 {
@@ -36,7 +46,7 @@ Linked_list list;
 list.insert_end(4);
 list.insert_end(5);
 list.insert_end(6);
-cout << list.getlenght() << '\n';
+cout << list.getlength() << '\n';
 
 
 }
