@@ -10,15 +10,6 @@ Node* next;   //pointer to the next node
 Node(int d):data(d),next(nullptr){} 
 };
 
-
-//print all nodes starting from 'node'
-void print(Node* node) {
-	while (node) {
-		cout << node->data << " ";
-		node = node->next;
-	}
-	cout << '\n';
-}
 int main()
 {
 //create individual nodes
@@ -30,10 +21,6 @@ Node* node2 = new Node(5);
 node->next = node1;
 node1->next = node2;
 node2->next = nullptr;
-
-
-//print list
-print(node);
 
 
 //access data of next nodes
