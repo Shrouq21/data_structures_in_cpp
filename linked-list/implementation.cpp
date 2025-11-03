@@ -6,7 +6,7 @@ struct Node {
 	int data{}; //value stored in the node
 	Node* next{};   //pointer to the next node
 
-//constructor
+// constructor
 
 Node(int d):data(d),next(nullptr){} 
 };
