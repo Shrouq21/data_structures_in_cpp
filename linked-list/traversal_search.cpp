@@ -62,7 +62,7 @@ int search(int value) {
 	return -1;
 }
 
-// Move-to-front opotimization v0: swap found node with previous
+// Move-to-front optimization v0: swap found node with previous
 
 int search_improved_v0(int value) {
 	int idx = 0;
