@@ -18,6 +18,14 @@ private:
 	int len;
 public:
 Linked_list():head(nullptr),tail(nullptr),len(0){}
+void print() {
+	Node* temp = head;
+	while (temp) {
+		cout << temp->data << " ";
+		temp = temp->next;
+	}
+	cout << '\n';
+}
 void insert_end(int value) {
 	Node* temp = new Node(value);
 	if (!head)head = tail = temp;
@@ -47,6 +55,7 @@ list.insert_end(4);
 list.insert_end(5);
 list.insert_end(6);
 cout << list.getlength() << '\n';
+list.print();
 
 
 }
