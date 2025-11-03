@@ -23,7 +23,7 @@ node1->next = node2;
 node2->next = nullptr;
 
 
-//access data of next nodes
+// access data of next nodes
 cout << node->next->data << '\n';
 cout << node->next->next->data << '\n';
 
