@@ -65,7 +65,7 @@ node1->next = node2;
 node2->next = nullptr;
 
 
-//print list
+// print list
 print(node);
 Recursive(node);
 Reversed(node);
