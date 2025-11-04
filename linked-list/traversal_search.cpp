@@ -69,7 +69,7 @@ public:
 		Node* prv = nullptr;
 		for (Node* curr = head; curr; curr = curr->next, idx++) {
 			if (curr->data == value) {
-				if (idx == 0)return idx; //Already at front
+				if (idx == 1)return idx; //Already at front
 				swap(prv->data, curr->data);  //Move to front
 				return idx - 1;
 			}
